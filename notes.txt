@@ -14,4 +14,12 @@
   -Function the greater the market order, the higher the cost of transaction as the liquidity begins to be sucked up
   -Linear/combination linear models easier and quicker to predict/expected cost instead of quadratic. Timing sale price is important. 
   
-
+Portfolio Optimisation:
+  -Weigh model instruments by equal weighting, signal strength weighting(not so good), risk weighting(chance of underperformance) and combinations
+  -Correlated stocks and reducing the overall portfolio dedicated to a sector so that a single macro swing doesn't affect the whole performance. Equally,       no point having all stocks equally represented as there is no optimisation. 
+  -Measures are, mean variance optimisation, Markowitz model and more Chapter 7 'inside the black box'
+  
+Transaction Orders:
+    -Depends on the aggressiveness of the position. Market orders being the most and filling at the quickest possible time. Where losing pennies makes pounds. 
+    -The further away from the bid and ask prices in the same direction reduces the aggressiveness until your price can be achieved.
+    -A blend of limit order positions can help optimise your aggressiveness and realising profits. 
