@@ -1,0 +1,17 @@
+3 stage to building models:
+
+1) Alpha generating strategies
+  -Trend Following or Mean reversion main methods
+  -QLS. Taking long and short positions to different priced instruments depending upon whether they are 'cheaply' or 'expensively' priced.
+  -Higher yielding priced instruments 
+  -Needing good liquidity for fairer priced movements
+  -Empirical or hypothetical modelling. Based off data or a theory.
+2) Risk Model behaviour
+  -Check your group of assets don't co-vary with each other or your downside risk will be significantly elevated.
+  -Reduce leverage depending on the signal strength of your alpha strategy, in turn portfolio size of your position.
+  -Apply a function for your size position as a percentage of portfolio to allow for a greater size with stronger signals
+3) Transaction Costs
+  -Function the greater the market order, the higher the cost of transaction as the liquidity begins to be sucked up
+  -Linear/combination linear models easier and quicker to predict/expected cost instead of quadratic. Timing sale price is important. 
+  
+
