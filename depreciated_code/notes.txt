@@ -1,3 +1,5 @@
+This file contains old learning notes. To be superseded by new Jupyter notebook.
+
 3 stage to building models:
 
 1) Alpha generating strategies

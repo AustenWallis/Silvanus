@@ -1,0 +1,7 @@
+__pycache__
+.ipynb_checkpoints
+
+secret_strategies.py
+config.py
+ideas.ipynb
+data/

@@ -17,6 +17,7 @@ import numpy as np
 import math as m
 import datetime as dt
 import matplotlib.dates as mdates
+import config
 
 # --------------------------------
 # API DOCUMENTATION
@@ -47,6 +48,7 @@ size = 'full'
 # ALL POSSIBLE SIZES ---
 """compact, full"""
 
+api_key = config.old_api_key
 # --------------------------------
 # STOCK MARKET API
 # --------------------------------
@@ -57,7 +59,7 @@ size = 'full'
 # ~CSV for reduced memory with extended data~
 if function == "TIME_SERIES_INTRADAY_EXTENDED":
 
-    CSV_URL = f"https://www.alphavantage.co/query?function={function}&symbol={ticker}&interval={interval}&slice=year2month12&apikey=UI411LQPQUVAIF0V"
+    CSV_URL = f"https://www.alphavantage.co/query?function={function}&symbol={ticker}&interval={interval}&slice=year2month12&apikey={api_key}"
     with requests.Session() as s:
         download = s.get(CSV_URL)
         decoded_content = download.content.decode('utf-8')
@@ -66,13 +68,13 @@ if function == "TIME_SERIES_INTRADAY_EXTENDED":
         for row in data:
             print(row)
 else:
-    url = f"https://www.alphavantage.co/query?function={function}&symbol={ticker}&interval={interval}&outputsize={size}&apikey=UI411LQPQUVAIF0V"
+    url = f"https://www.alphavantage.co/query?function={function}&symbol={ticker}&interval={interval}&outputsize={size}&apikey={api_key}"
     r = requests.get(url)
     data = r.json()
 
 # %% 
 # --------------------------------
-# CANDLESTICK GRAPHING
+# MANUAL CANDLESTICK GRAPHING
 # --------------------------------
 
 # EXTENDED TRADING INCLUDED 4AM to 8PM US EASTERN
